@@ -1,3 +1,4 @@
+# Workflow
 name: Github Actions 실행시켜보기
 
 on:
@@ -5,10 +6,17 @@ on:
     branches:
       - main
 
+#Workflow는 여러개의 Job으로 이루어질 수 있고
 jobs:
   My-Job:
     runs-on: ubuntu-latest
-
+    # 하나의 Job은 여러개의 Step으로 이루어져있다.
     steps:
       - name: hello world 출력하기
         run: echo "hello world"
+      #ubuntu 컴퓨터서버 최신버젼
+
+      - name: 여러 명령어 문장 작성하기
+        run: echo "good"
+          echo "morning"
+          pwd

@@ -11,5 +11,14 @@ jobs:
     steps:
       - name: Github Repository 파일 불러오기
         uses: actions/checkout@v4
+
+      - name: 빌드하기
+        run: npm run build
+
+      - name: Debugging
+        run: |
+          ls 
+          cd dist
+          ls
             
-            
+

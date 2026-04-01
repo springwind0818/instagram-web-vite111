@@ -1,0 +1,14 @@
+name: Github Actions 실행시켜보기
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  My-Job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hello world 출력하기
+        run: echo "hello world"

@@ -40,4 +40,4 @@ jobs:
 
       - name: S3에 빌드 파일 업로드
         run: |
-          aws s3 cp ./dist s3://bokseub/ --recursive
+          aws s3 cp ./231/dist s3://bokseub/ --recursive
